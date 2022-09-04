@@ -1,10 +1,16 @@
-import "./styles.css";
+/**
+ * テンプレート文字列
+ */
 
-document.getElementById("app").innerHTML = `
-<h1>Hello Vanilla!</h1>
-<div>
-  We use the same configuration as Parcel to bundle this sandbox, you can find more
-  info about Parcel 
-  <a href="https://parceljs.org" target="_blank" rel="noopener noreferrer">here</a>.
-</div>
-`;
+const name1 = "abc";
+const age1 = 30;
+
+// 従来
+const msg1 = "私の名前は" + name1 + "です。年齢は" + age1 + "です。";
+console.log(msg1);
+
+const name2 = "def";
+const age2 = 35;
+// テンプレート文字列
+const msg2 = `私の名前は${name2}です。年齢は${age2}です。`;
+console.log(msg2);
